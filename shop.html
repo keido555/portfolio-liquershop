@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="liquor-shop" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <title>Liquor-shop</title>
+</head>
+<body>
+    <!--ヘッダー-->
+    <header>
+        <div class="header-wrapper">
+            <img src="img/logo.png" class="header-img" style="width: 180px; height: 70px;" />
+            <div class="header-login"><a href="#">ログイン</a></div>
+        </div>
+        <div class="header-under">
+            <ul>
+                <li><a href="home.html">ホーム</a></li>
+                <li><a href="event.html">イベント</a></li>
+                <li><a href="store.html">店舗</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="shop-page">
+    <!--コンテンツ-->
+    <div class="contents">
+        <!--コンテンツ画像-->
+        <div class="shop-front">
+            <img src="img/wain1.jpg" class="shop-image" />
+        </div>
+
+        <h2 class="shopTitle"><img src="img/megane.jpeg" style="width: 20px;"/>カテゴリから探す</h2>
+        <div class="category" style="display: block;">
+            <div class="tabCont">
+                <h3 class="tab01">
+                    <a class="closingTitle" onclick="setTab(this.parentNode.className);
+                    return false;" onkeypress="setTab(this.parentNode.className); return false">
+                    ビールから探す
+                    </a>
+                </h3>
+                <div class="btnCont">
+                    <!--２件ずつ-->
+                    <ul>
+                        <li>
+                            <img src="img/beer1.jpg" class="item-img" />
+                            <p>ビールA</p>
+                        </li>
+                        <li>
+                            <img src="img/beer2.jpg" class="item-img" />
+                            <p>ビールB</p>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="tab01">
+                    <a class="closingTitle" onclick="setTab(this.parentNode.className);
+                    return false;" onkeypress="setTab(this.parentNode.className); return false">
+                    ワインから探す
+                    </a>
+                </h3>
+                <div class="btnCont">
+                    <!--２件ずつ-->
+                    <ul>
+                        <li>
+                            <img src="./img/wain1.jpg" class="item-img" />
+                            <p>ワインA</p>
+                        </li>
+                        <li>
+                            <img src="./img/wain2.jpg" class="item-img" />
+                            <p>ワインB</p>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="tab01">
+                    <a class="closingTitle" onclick="setTab(this.parentNode.className);
+                    return false;" onkeypress="setTab(this.parentNode.className); return false">
+                    日本酒から探す
+                    </a>
+                </h3>
+                <div class="btnCont">
+                    <!--２件ずつ-->
+                    <ul>
+                        <li>
+                            <img src="img/nihonsyu2.jpg" class="item-img" />
+                            <p>日本酒A</p>
+                        </li>
+                        <li>
+                            <img src="./img/nihonsyu3.jpg" class="item-img" />
+                            <p>日本酒B</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--お酒の問合せ-->
+                <div class="contact">
+                    <h2 class="contact-title">お酒のお問い合わせ</h2>
+                    <p class="contact-sentense">当店にて取り扱いのないお酒で、気になる商品がある際にはご連絡ください。</p>
+                    <div>
+                        <div class="name">お名前</div>
+                        <input type="text" id="name" name="your-name">
+                    </div>
+                    <div>
+                        <div class="email">メールアドレス</div>
+                        <input type="email" id="email" name="your-email">
+                    </div>
+                    <div>
+                        <div class="message">メッセージ</div>
+                        <textarea id="message" name="your-message"></textarea>
+                    </div>
+                    <input type="submit" name="button" value="送信">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--サイドバー-->
+    <div class="sidebar">
+        <div class="marginTop10">
+            <a>
+                <img src="img/cart.jpg" class="cart" style="width: 100px; height: 100px;" />
+            </a>
+            <h3>買い物かごを見る</h3>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>KIBI'S-Liqupr shop website</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

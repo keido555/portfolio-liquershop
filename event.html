@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="liquor-shop" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <title>Liquor-shop</title>
+</head>
+<body>
+    <!--ヘッダー-->
+    <header>
+        <div class="header-wrapper">
+            <img src="img/logo.png" class="header-img" style="width: 180px; height: 70px;" />
+            <div class="header-login"><a href="#">ログイン</a></div>
+        </div>
+        <div class="header-under">
+            <ul>
+                <li><a href="home.html">ホーム</a></li>
+                <li><a href="shop.html">ショップ</a></li>
+                <li><a href="store.html">店舗</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--イベント-->
+    <div class="shop-front">
+        <img src="img/hanabi.jpg" class="shop-image" />
+    </div>
+
+    <div class="event">
+    <!--front-->
+    <div class="contents">
+        <h2 class="eventTitle"><img src="img/megane.jpeg" style="width: 20px;"/>イベントを探す</h2>
+        <div class="category">
+            <div class="category-item">
+                <img src="img/party1.jpg" class="party" />
+                <h3>お祭りA</h3>
+                <p>
+                    開催日：2021/4/10 ~ 2021/5/6<br />
+                    開催場所：岡山県岡山市北区XXXXX<br />
+                    参加費は1000円。クラフトビールに関するイベントです。イベントでは岡山県下のクラフトビールが一同に介します。
+                    当日はビール券を購入してビールや食事を購入する立食パーティです。
+                </p>
+            </div>
+            <div class="category-item">
+                <img src="img/party2.jpg" class="party" />
+                <h3>お祭りB</h3>
+                <p>
+                    開催日：2021/5/10 ~ 2021/5/25<br />
+                    開催場所：岡山県倉敷市児島YYYYY<br />
+                    クラフトビールに関するイベントです。イベントでは岡山県下のクラフトビールが一同に介します。
+                    入場費は1000円です。当日はビール券を購入し食事も出ます。
+                </p>
+            </div>
+            <div class="category-item">
+                <img src="img/party3.jpg" class="party" />
+                <h3>お祭りC</h3>
+                <p>
+                    開催日：2021/6/1 ~ 2021/6/4<br />
+                    開催場所：岡山県岡山市北区ZZZZZ<br />
+                    クラフトビールに関するイベントです。イベントでは岡山県下のクラフトビールが一同に介します。
+                    入場費は1000円です。当日はビール券を購入し食事も出ます。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--サイドバー-->
+    <div class="eventSidebar">
+        <div class="eventSearch">
+            <h3>イベント検索</h3>
+            <p>
+                <select class="selectBox" onchange="javascript:areaChange()">
+                    <option value>-</option>
+                    <option label="ビール" value="1">ビール</option>
+                    <option label="日本酒" value="2">日本酒</option>
+                    <option label="ワイン" value="3">ワイン</option>
+                </select>
+            </p>
+            <a href="#" class="btn btn--orange">検索</a>
+        </div>
+        <img src="img/okayama.jpg" style="width: 150px; height: 150px; margin-top: 30px;"/>
+    </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>KIBI'S-Liqupr shop website</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

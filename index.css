@@ -1,0 +1,360 @@
+html, body {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    margin-top: 50px;
+}
+
+/* ヘッダー */
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.header-login {
+    margin-right: 40px;
+    margin-top: 20px;
+    font-size: large;
+}
+
+/* ヘッダー下部 */
+.header-under ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.header-under ul li {
+    width: 140px;
+    text-align: center;
+    background-color: blue;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 2px;
+}
+
+.header-under ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* ホーム画像 */
+.swiper-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.swiper-image {
+    width: 70%;
+}
+
+.home-image {
+    width: 55%;
+    height: 22%;
+}
+
+.home2-image {
+    width: 60%;
+    height: 28%;
+}
+
+/* 情報エリア */
+.infoArea {
+    margin: 0 auto;
+}
+
+.news {
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-left {
+    display: flex;
+    width: 100%;
+}
+
+.newsTitle {
+    float: left;
+    width: 150px;
+    height: 60px;
+    font-size: 24px;
+}
+
+.news-list {
+    margin-top: 25px;
+    line-height: 5px;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    width: 650px;
+}
+
+.date {
+    display: flex;
+}
+
+.ttl {
+    margin-left: 20px;
+    font-size: small;
+    font: bold;
+}
+
+.txt {
+    margin-left: 20px;
+    font-size: small;
+}
+
+/* shop */
+
+/* コンテンツ部分 */
+.contents {
+    width: 78%;
+}
+/* サイドバー部分 */
+.sidebar {
+    width: 20%;
+}
+
+.shop-page {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* shop画像 */
+.shop-image {
+    width: 560px;
+    height: 220px;
+}
+
+/* カテゴリ */
+.shopTitle {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.tabCont {
+    text-align: left;
+    font-size: 80%;
+    margin: 15px;
+    line-height: 140%;
+}
+
+.tab01 {
+    font-size: 16px;
+}
+
+.btnCont ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.btnCont li {
+    margin: 0 10px;
+}
+
+.item-img {
+    width: 220px;
+    height: 220px;
+}
+
+.item-img:hover {
+    box-shadow: 0 5px 10px black;
+    transform: translate(0, -5px);
+}
+
+.btnCont p {
+    font-size: 16px;
+}
+
+.contact {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.contact-title {
+    font-size: 26px;
+}
+
+.contact-sentense {
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    border-radius: 5%;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    padding: 12px 12px;
+    background: #000066;
+    color: #fff;
+    line-height: 1em;
+    transition: .3s;
+    box-shadow: 6px 6px 3px #666;
+    border: 2px solid #006;
+}
+
+input[type="submit"]:hover {
+    box-shadow: none;
+    color: #006;
+    background: #fff;
+}
+
+.cart {
+    cursor: pointer;
+}
+
+/* event */
+.event {
+    width: 100%;
+    display: flex;
+}
+
+
+/* サイドバー部分 */
+.eventSearch {
+    border: medium solid #666;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: rgb(218, 218, 218);
+}
+
+.category-item {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.party {
+    width: 85%;
+    height: 60%;
+}
+
+.selectBox {
+    width: 120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn--orange,
+a.btn--orange {
+    width: 30px;
+    color: #fff;
+    background-color: blue;
+    border-bottom: 5px solid #0c00b8;
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+    margin-top: 3px;
+    color: #fff;
+    background: rgb(53, 116, 250);
+    border-bottom: 2px solid rgb(40, 90, 197);
+}
+
+a.btn--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+/* store */
+.store {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.store-item {
+    margin: 0 auto;
+}
+
+/* contact */
+.contactPage {
+    background-image: url(./img/contact-bg.jpg);
+    background-size: cover;
+    min-height: 500px;
+    text-align: left;
+}
+
+.contactPage-title {
+    font-size: 32px;
+    padding-top: 40px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.contactK {
+    margin-left: 50px;
+}
+
+/* SNS */
+.sns {
+    background: #FAF7F0;
+    padding: 4% 0;
+}
+
+.snsPage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-title {
+    margin-bottom: 30px;
+    border-bottom: thick solid #40f2ff;
+}
+
+.sns-box {
+    width: 30%;
+}
+
+/* フッター */
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.copyright {
+    font-size: 15px;
+}
+
